@@ -3,7 +3,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Skill of Professional",
-  description: "HR platform for professional skills assessment",
+  description: "AI-платформа для подбора персонала",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

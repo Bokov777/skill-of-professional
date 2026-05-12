@@ -1,49 +1,61 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <div className="max-w-3xl w-full space-y-8 text-center">
-        <div className="space-y-2">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
-            Skill of <span className="text-blue-500">Professional</span>
+    <div className="min-h-screen flex flex-col">
+      {/* Header */}
+      <header className="flex items-center justify-between px-6 py-5 max-w-6xl mx-auto w-full">
+        <span className="text-sm font-medium tracking-tight">Skill of Professional</span>
+        <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          Начать
+        </a>
+      </header>
+
+      {/* Hero */}
+      <main className="flex-1 flex flex-col items-center justify-center px-6">
+        <div className="max-w-2xl mx-auto text-center space-y-8">
+          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-[0.95]">
+            Подбор персонала.
+            <br />
+            <span className="text-muted-foreground">По-новому.</span>
           </h1>
-          <p className="text-muted-foreground text-lg">
-            Платформа для подбора и оценки профессиональных навыков
+
+          <p className="text-muted-foreground text-lg sm:text-xl max-w-md mx-auto leading-relaxed">
+            AI-платформа для поиска, оценки и найма профессионалов.
           </p>
+
+          <div className="pt-4">
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 h-12 px-8 rounded-xl bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Попробовать
+            </a>
+          </div>
         </div>
 
-        <div className="flex justify-center gap-3 flex-wrap">
-          <Button size="lg">Начать подбор</Button>
-          <Button size="lg" variant="outline">Узнать больше</Button>
+        {/* Features — минимум, без карточек */}
+        <div className="mt-24 sm:mt-32 w-full max-w-3xl mx-auto grid grid-cols-3 gap-8 text-center">
+          <div className="space-y-2">
+            <div className="text-2xl">🎯</div>
+            <div className="text-sm font-medium">Точный поиск</div>
+            <div className="text-xs text-muted-foreground">По навыкам и опыту</div>
+          </div>
+          <div className="space-y-2">
+            <div className="text-2xl">⚡</div>
+            <div className="text-sm font-medium">AI-оценка</div>
+            <div className="text-xs text-muted-foreground">Автоматический скрининг</div>
+          </div>
+          <div className="space-y-2">
+            <div className="text-2xl">🤝</div>
+            <div className="text-sm font-medium">Рекомендации</div>
+            <div className="text-xs text-muted-foreground">На основе данных</div>
+          </div>
         </div>
+      </main>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
-          <Card>
-            <CardHeader><CardTitle>📋 Поиск</CardTitle></CardHeader>
-            <CardContent className="text-sm text-muted-foreground">
-              Интеллектуальный поиск кандидатов по навыкам и опыту
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader><CardTitle>📊 Оценка</CardTitle></CardHeader>
-            <CardContent className="text-sm text-muted-foreground">
-              Автоматизированная проверка профессиональных компетенций
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader><CardTitle>🤝 Подбор</CardTitle></CardHeader>
-            <CardContent className="text-sm text-muted-foreground">
-              Персональные рекомендации на основе анализа навыков
-            </CardContent>
-          </Card>
-        </div>
-
-        <footer className="pt-16 text-xs text-muted-foreground">
-          Next.js + Tailwind CSS + shadcn/ui
-        </footer>
-      </div>
+      {/* Footer */}
+      <footer className="px-6 py-6 text-center text-xs text-muted-foreground">
+        Skill of Professional
+      </footer>
     </div>
   )
 }
