@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 const NAV = [
   { href: "/dashboard", label: "Дашборд", icon: "📊" },
   { href: "/candidates", label: "Кандидаты", icon: "👥" },
+  { href: "/tests", label: "Тесты", icon: "📝" },
 ]
 
 export function Nav({ children }: { children: React.ReactNode }) {
