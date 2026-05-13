@@ -99,3 +99,30 @@ export const candidates: Candidate[] = [
     ]
   },
 ]
+
+export interface Platform {
+  id: string
+  name: string
+  description: string
+  url: string
+  freeTier: boolean
+  hasApi: boolean
+  categories: string[]
+  skills: number
+  apiType: string
+  notes: string
+}
+
+export const platforms: Platform[] = [
+  { id:"testgorilla",name:"TestGorilla",description:"400+ тестов: технические, когнитивные, личностные",url:"https://testgorilla.com",freeTier:true,hasApi:true,categories:["tech","cognitive","personality","language"],skills:400,apiType:"REST (Business plan)",notes:"Бесплатно 10 тестов" },
+  { id:"coderpad",name:"CoderPad",description:"Live coding интервью, 99+ языков",url:"https://coderpad.io",freeTier:true,hasApi:true,categories:["coding","technical"],skills:99,apiType:"REST (платные)",notes:"" },
+  { id:"hackerrank",name:"HackerRank",description:"Кодинг-челленджи, 40+ языков",url:"https://hackerrank.com",freeTier:false,hasApi:false,categories:["coding","algorithms"],skills:50,apiType:"Нет API",notes:"" },
+  { id:"codesignal",name:"CodeSignal",description:"Автоматизированное скоринг-тестирование",url:"https://codesignal.com",freeTier:false,hasApi:true,categories:["coding","technical"],skills:40,apiType:"GraphQL+REST (Enterprise)",notes:"" },
+  { id:"codility",name:"Codility",description:"Глубокое тестирование алгоритмов, античитинг",url:"https://codility.com",freeTier:false,hasApi:true,categories:["coding","algorithms"],skills:30,apiType:"REST (Enterprise)",notes:"" },
+  { id:"imocha",name:"iMocha",description:"2500+ навыков, AI-прокторинг",url:"https://imocha.io",freeTier:true,hasApi:true,categories:["tech","cognitive","language","domain"],skills:2500,apiType:"REST (Enterprise)",notes:"API-first" },
+  { id:"xobin",name:"Xobin",description:"3400+ тестов, AI-прокторинг, ATS",url:"https://xobin.com",freeTier:false,hasApi:true,categories:["tech","coding","cognitive","domain"],skills:3400,apiType:"REST+Webhook",notes:"" },
+  { id:"aloooba",name:"Alooba",description:"API-first, кастомные сценарии",url:"https://alooba.com",freeTier:false,hasApi:true,categories:["data","engineering","api"],skills:200,apiType:"REST",notes:"" },
+  { id:"x0pa",name:"X0PA AI",description:"AI-оценка, REST API, webhook, SSO",url:"https://x0pa.com",freeTier:false,hasApi:true,categories:["tech","cognitive","domain"],skills:500,apiType:"REST+Webhook+SSO",notes:"" },
+  { id:"mettl",name:"Mercer Mettl",description:"Прокторинг, сертификация, аналитика",url:"https://mettl.com",freeTier:false,hasApi:true,categories:["coding","cognitive","domain","certification"],skills:1000,apiType:"REST (Enterprise)",notes:"" },
+  { id:"coderbyte",name:"Coderbyte",description:"Кодинг-задачи + обучение",url:"https://coderbyte.com",freeTier:false,hasApi:false,categories:["coding","learning"],skills:300,apiType:"Нет API",notes:"" },
+]
