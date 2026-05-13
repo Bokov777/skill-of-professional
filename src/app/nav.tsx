@@ -8,6 +8,7 @@ const NAV = [
   { href: "/dashboard", label: "Дашборд", icon: "📊" },
   { href: "/candidates", label: "Кандидаты", icon: "👥" },
   { href: "/tests", label: "Тесты", icon: "📝" },
+  { href: "/pipeline", label: "Воронка", icon: "🔄" },
 ]
 
 export function Nav({ children }: { children: React.ReactNode }) {
